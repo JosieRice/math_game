@@ -1,8 +1,9 @@
 class Player
-    @@num_of_players = 0
-    attr_accessor :lives, :score
-    # Getters and Setters for both
-    def initialize        
+    # get and set access to player variables
+    attr_accessor :lives, :score, :name
+    # initialize name and default lives and score
+    def initialize(name) 
+        @name = name      
         @lives = 3
         @score = 0
     end
