@@ -21,8 +21,7 @@ class Game
         @logic.question
         puts "Player 1: What does #{@logic.num1} plus #{@logic.num2} equal?"
         print "> "
-        answer = $stdin.gets.chomp
-        
+        answer = $stdin.gets.chomp     
         if answer == "#{@logic.answer}"
             puts "That is correct"
             puts "P1: #{@player1.lives}/3 vs P2: #{@player2.lives}/3"
@@ -30,8 +29,7 @@ class Game
             puts "That's incorrect"
             @player1.lives -= 1
             puts "P1: #{@player1.lives}/3 vs P2: #{@player2.lives}/3"
-        end
-        
+        end     
     end
 
     def player2_turn
@@ -39,8 +37,7 @@ class Game
         puts "Player 2: What does #{@logic.num1} plus #{@logic.num2} equal?"
         # puts "#{@player1.lives -= 1}"
         print "> "
-        answer = $stdin.gets.chomp
-        
+        answer = $stdin.gets.chomp     
         if answer == "#{@logic.answer}"
             puts "That is correct"
             puts "P1: #{@player1.lives}/3 vs P2: #{@player2.lives}/3"
@@ -62,7 +59,4 @@ class Game
            play
         end
     end
-
-
 end
-
