@@ -1,19 +1,13 @@
-##### Nouns / Entities
-
-# Player
-# Turns
-# Questions (Math Problems)
-# Numbers
-# Lives (3)
-# Scores
+# require_relative 'player'
+require_relative 'game'
 
 
 
-#Player
-    #Lives (state)
-    #Scores (state)
 
-#Game
-    #Numbers (state)
-    #Question (behaviour)
-    #Turn (behaviour)
+
+# p player1
+
+game = Game.new
+
+p game.play
+
